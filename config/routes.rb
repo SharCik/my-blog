@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  get 'main_pages/work'
+  
+  root  'main_pages#work'
+  match '/what', to: 'main_pages#what_i_do', via: 'get'
+  match '/contact', to: 'main_pages#contact', via: 'get'
 
-  get 'main_pages/what_i_do'
 
-  get 'main_pages/contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
