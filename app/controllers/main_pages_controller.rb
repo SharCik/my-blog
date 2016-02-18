@@ -1,5 +1,5 @@
 class MainPagesController < ApplicationController
-  def work
+  def about_me
   end
 
   def what_i_do

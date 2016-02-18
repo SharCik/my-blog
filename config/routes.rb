@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  
-  root  'main_pages#work'
+
+  root  'main_pages#about_me'
+  match '/signup',  to: 'users#new',            via: 'get'
   match '/what', to: 'main_pages#what_i_do', via: 'get'
   match '/contact', to: 'main_pages#contact', via: 'get'
-
+  
 
 
   # The priority is based upon order of creation: first created -> highest priority.

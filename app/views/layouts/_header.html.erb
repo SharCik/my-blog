@@ -1,10 +1,10 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="navbar-inner">
+<header class="navbar navbar-fixed-top ">
+      <div >
         <div class="container">
-          <%= link_to "sample app", '#', id: "logo" %>
+          <%= see_mini_logo(yield(:title)) %> 
           <nav>
             <ul class="nav pull-right">
-              <li><%= link_to "Work",    root_path %></li>
+              <li><%= link_to "About me",    root_path %></li>
               <li><%= link_to "What i do", what_path %></li>
               <li><%= link_to "Contact", contact_path %></li>
             </ul>

@@ -2,6 +2,13 @@
 
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
+Rails.application.config.assets.precompile += %w( logo.png )
+Rails.application.config.assets.precompile += %w( logo_1.png )
+Rails.application.config.assets.precompile += %w( mpcc_thumb.png )
+Rails.application.config.assets.precompile += %w( ivgl-thumb.jpg )
+Rails.application.config.assets.precompile += %w( marcom_thumb2.png )
+Rails.application.config.assets.precompile += %w( png.png )
+Rails.application.config.assets.precompile += %w( SIGN-UP-NOW-BUTTON.jpg )
 
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
