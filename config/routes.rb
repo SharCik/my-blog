@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
 
+  get 'comments/create'
+
+  get 'comments/destroy'
+
+  resources :posts do 
+    resources :comments
+  end
   root  'main_pages#about_me'
   match '/signup',  to: 'users#new',            via: 'get'
   match '/what', to: 'main_pages#what_i_do', via: 'get'

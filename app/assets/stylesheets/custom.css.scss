@@ -4,7 +4,7 @@
 
 body {
   padding-top: 100px;
-  overflow:hidden
+  overflow:auto;
 }
 
 section {
@@ -55,8 +55,25 @@ p {
   line-height: 1.7em;
 }
 
-.container{
-	margin: 0 auto;
+.container-fluid{
+  height: 200px;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+ 
+.row-fluid {
+  height:100%; 
+  display:table-cell; 
+  vertical-align: middle;
+}
+ 
+.centering {
+  float:none;
+  width: 70%;
+  max-width: 1300px;
+  margin:0 auto;
+  margin-bottom: 100px;
 }
 
 .middle{
@@ -107,6 +124,7 @@ footer {
 	border-top: 1px solid #eaeaea;
 	color: #999;
 	font-size: 1.2em;
+  background: #fff;
 }
 
 footer a {
@@ -170,7 +188,7 @@ footer ul li {
 /* contact */
 
 .feedback {
-	width: 70%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -186,6 +204,11 @@ footer ul li {
 	margin: 0 auto;
 }
 
+#question{
+  padding-left: 0px;
+  padding-right: 0px
+}
+
 .col li{
 	list-style-type: none;
 }
@@ -194,14 +217,22 @@ footer ul li {
 	list-style-type: none;
 }
 
+
 .left{
 	float: left;
+  width: 50%;
 }
 
 .right{
-	float: right;
+  width: 50%;
+  float: right;
 }
 
 #e-mail{
-	padding-right: 230px;
+  text-align: right;
 }
+
+#email{
+  float: right;
+}
+

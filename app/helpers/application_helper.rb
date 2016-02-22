@@ -34,5 +34,6 @@ module ApplicationHelper
     else
       link_to "What I do",   what_path
     end
-  end 
+  end
+
 end
